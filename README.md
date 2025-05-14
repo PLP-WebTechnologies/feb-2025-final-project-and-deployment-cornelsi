@@ -29,7 +29,7 @@ FarmConnect is a responsive, multi-page e-commerce website designed for farmers 
 ## Installation
 1. **Clone the repository:**
 ```bash
-$ git clone https://github.com/your-username/farmconnect.git
+$ git clone https://github.com/PLP-WebTechnologies/feb-2025-final-project-and-deployment-cornelsi.git
 ````
 
 2. **Navigate into the project directory:**
