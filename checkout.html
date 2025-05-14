@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FarmConnect - Checkout</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="FarmConnect Logo" />
+            </div>
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout">
+            <h1>Checkout</h1>
+            <div id="cartSummary">
+                <p>Loading your cart...</p>
+            </div>
+            <button id="payBtn" class="cta-button" style="background-color:#2d572c; color:white; padding:12px 25px; border:none; border-radius:6px; margin-top:20px;">Pay Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FarmConnect. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cart = JSON.parse(localStorage.getItem("farmConnectCart") || "[]");
+            const summaryDiv = document.getElementById("cartSummary");
+            const payBtn = document.getElementById("payBtn");
+
+            if (cart.length === 0) {
+                summaryDiv.innerHTML = "<p>Your cart is empty. <a href='shop.html'>Go back to shop</a>.</p>";
+                payBtn.style.display = "none";
+                return;
+            }
+
+            let total = 0;
+            summaryDiv.innerHTML = `
+                <ul>
+                    ${cart.map(item => {
+                        total += item.price * item.qty;
+                        return `<li>${item.name} x${item.qty} — Ksh ${item.price * item.qty}</li>`;
+                    }).join("")}
+                </ul>
+                <p><strong>Total: Ksh ${total}</strong></p>
+            `;
+
+            payBtn.addEventListener("click", () => {
+                alert("Payment gateway integration coming soon. Redirecting to Mpesa, PayPal, or Flutterwave...");
+            });
+        });
+    </script>
+
+    <script src="main.js"></script>
+</body>
+</html>

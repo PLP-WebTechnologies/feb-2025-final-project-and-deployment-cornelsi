@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmConnect - Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script> <!-- Cart Icon -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="FarmConnect Logo">
+            </div>
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cart-icon" id="cartToggle">
+                <i class="ph ph-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Panel -->
+    <div id="cartPanel" class="hidden">
+        <h3>Your Cart (<span id="cartCount">0</span>)</h3>
+        <ul id="cartItems"></ul>
+        <p>Total: <span id="cartTotal">Ksh 0</span></p>
+        <button id="checkoutBtn">Checkout</button>
+    </div>
+
+
+
+    <main>
+        <section class="shop">
+            <h1>Our Products</h1>
+            <p>Welcome to the FarmConnect marketplace — your direct link to fresh, organic, and locally sourced produce from smallholder farmers across Kenya. Every item here is hand-picked, quality-assured, and fairly priced to support both your health and our growers.</p>
+
+            <h2>Fresh Vegetables</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="images/kales.jpg" alt="Fresh Kale">
+                    <p>Kale (Sukuma Wiki) - Ksh 40/bundle</p>
+                </div>
+                <div class="product">
+                    <img src="images/cabbage.jpg" alt="Cabbage">
+                    <p>Green Cabbage - Ksh 50/head</p>
+                </div>
+                <div class="product">
+                    <img src="images/carrots.jpg" alt="Carrots">
+                    <p>Crunchy Carrots - Ksh 90/kg</p>
+                </div>
+                <div class="product">
+                    <img src="images/onions.jpg" alt="Red Onions">
+                    <p>Red Onions - Ksh 100/kg</p>
+                </div>
+                <div class="product">
+                    <img src="images/tomatoes.jpg" alt="Tomatoes">
+                    <p>Fresh Tomatoes - Ksh 250/kg</p>
+                </div>
+            </div>
+
+            <h2>Fruits</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="images/bananas.webp" alt="Bananas">
+                    <p>Sweet Bananas - Ksh 60/bunch</p>
+                </div>
+                <div class="product">
+                    <img src="images/mangoes.jpg" alt="Mangoes">
+                    <p>Juicy Mangoes - Ksh 50 each</p>
+                </div>
+                <div class="product">
+                    <img src="images/avocados.jpg" alt="Avocados">
+                    <p>Hass Avocados - Ksh 35 each</p>
+                </div>
+            </div>
+
+            <h2>Staples & Animal Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="images/maize.jpg" alt="Maize">
+                    <p>Dried Maize - Ksh 130/kg</p>
+                </div>
+                <div class="product">
+                    <img src="images/milk.jpg" alt="Milk">
+                    <p>Fresh Cow Milk - Ksh 70/litre</p>
+                </div>
+                <div class="product">
+                    <img src="images/eggs.jpg" alt="Eggs">
+                    <p>Free-Range Eggs - Ksh.200/dozen</p>
+                </div>
+            </div>
+
+            <section class="how-it-works">
+                <h2>How It Works</h2>
+                <p><strong>1.</strong> Browse our farm-fresh produce, updated daily.<br>
+                   <strong>2.</strong> Add items to your cart and check out securely.<br>
+                   <strong>3.</strong> Your produce is packed and delivered within 24–48 hours.<br>
+                   <strong>4.</strong> Enjoy healthy meals while empowering local farmers!</p>
+            </section>
+
+            <section class="call-to-action" style="margin-top: 40px;">
+                <h2>Support Local. Eat Better.</h2>
+                <p>Every purchase helps a Kenyan farmer thrive. Join our movement and make a difference with every bite.</p>
+                <a href="contact.html" class="cta-button" style="background-color:#2d572c; color:white; padding:12px 25px; display:inline-block; margin-top:10px; border-radius:6px; text-decoration:none;">Get in Touch</a>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FarmConnect. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
