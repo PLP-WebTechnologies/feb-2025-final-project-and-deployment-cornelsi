@@ -72,4 +72,9 @@ Feel free to fork this repository and contribute by submitting pull requests. Fo
 
 ---
 
-Built with ❤️ by Cornelius Wekesa and the FarmConnect team.
+## 🔗 Live Demo
+
+Click the link below to view the deployed project:
+
+👉 [FarmConnect Live Site](https://plp-webtechnologies.github.io/feb-2025-final-project-and-deployment-cornelsi/)
+
